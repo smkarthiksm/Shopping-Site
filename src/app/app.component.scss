@@ -427,12 +427,10 @@
     }
     .look-book-section{
       width: 100%;
-      height: 75%;
       position: relative;
       .section-header{
         width: 100%;
-        height: 17%;
-        padding: 1.875rem 0 0 0;
+        padding: 1.875rem 0 1.875rem 0;
         .header-line-one{
           font-size: 2.25rem;
           text-align: center;
@@ -455,75 +453,92 @@
           margin-left: -20%;
         }
       }
-      .look-book-images-container{
-        display: table;
-        position: relative;
-        width: 73%;
-        height: 80%;
-        margin: 0 auto;
-        float: none;
-        overflow: hidden;
-        .look-book-image{
-          // display: table-cell;
-          float: left;
-          width: 23%;
-          height: 100%;
-          padding: 0 1% 0 1%;
-          .image-one{
+      .look-book-container{
+        color: white;
+        padding: 1.75rem;
+        .image-container{
+          width: 7.15rem;
+          .image{
+            padding-top: 100%;
             width: 100%;
-            height: 100%;
-            background-color: #398194;
+            background-image:url('../assets/images/man-side.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
           }
-          .image-two{
+        }
+        .name{
+          font-size: 1.395625rem;
+          padding: 1.25rem 0 0.5rem 0;
+          overflow: hidden;
+          white-space:nowrap;
+          text-overflow:ellipsis;
+        }
+        .profession{
+          font-size: 0.465rem;
+        }
+        .description{
+          padding: 1.25rem 0;
+          font-size: 0.62rem;
+        }
+        .autograph{
+          padding-top: 27.4%;
+          width: 100%;
+          background-image:url('../assets/images/autograph.png');
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+      .container-blue{
+        background-color: #398194;
+      }
+      .container-black{
+        background-color: black;
+      }
+    }
+    .collections{
+      position: relative;
+      .collection-container{
+        .left-container{
+          margin-right: 0;
+          margin-top: 0;
+          .sport-container{
+            padding-top: 43%;
             width: 100%;
-            height: 100%;
-            background-color: #398194;
+            background-image:url('../assets/images/two-women-shades.png');
+            background-repeat: no-repeat;
+            background-size: cover;
           }
-          .image-three{
+          .freshlook-container{
+            padding-top: 43%; 
             width: 100%;
-            height: 100%;
-            background-color: black;
+            background-image:url('../assets/images/girl-right-pose.png');
+            background-repeat: no-repeat;
+            background-size: cover;
           }
-          .image-four{
+        }
+        .right-container{
+          margin: 0;
+           .autumn-container{
+            padding-top: 100%;
             width: 100%;
-            height: 100%;
-            background-color: black;
-          }
-          .section-container{
-            .section-one{
-              height: 25%;
-              // padding: 1.875rem 0 0 1.9375rem;
-              .section-one-image{
-                width: 50%;
-                height: 100%;
-                background-image:url('../assets/images/man-coat.png');
-                background-repeat: no-repeat;
-                background-size: 100% 100%;
-              }
-            }
-            .section-two{
-               height: 18%;
-               color: white;
-               .section-two-name{
-                 font-size: 12px;
-              //   font-size: 1.395625rem;
-               }
-               .section-two-description{
-              //   font-size: 0.465rem;
-              font-size: 12px;
-               }
-            }
-            .section-three{
-               height:40%;
-               background-color: lawngreen;
-            }
-            .section-four{
-               height: 15%;
-               background-color: yellow;
-            }
+            background-image:url('../assets/images/girl-bag.png');
+            background-repeat: no-repeat;
+            background-size: contain;
           }
         }
       }
     }
+    .collections::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        left: 0;
+        background-color: #212121;
+        opacity: 0.7;
+      }
   }
 }
+
