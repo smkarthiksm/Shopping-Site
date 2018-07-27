@@ -1,0 +1,529 @@
+.app-container{
+  width:100%;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+
+  .nav-bar{
+    display: table;
+    position: relative;
+    width: 100%;
+    height:4.875rem;
+    background-color: black;
+    color:#e4a444;
+    text-align: center;
+
+    .nav-item-container{
+      position: relative;
+      display: table-cell;
+      color:white;
+      font-size: 0.75rem;
+      vertical-align: middle;
+      height: 4.375rem;
+    }
+    .logo-container{
+      font-family: 'Abril Fatface', cursive;
+      color: #e1a143;
+      width:14.6875rem;
+      font-size: 1.25rem;
+      letter-spacing: 0.375rem;
+    }
+    .section-container{
+      width:5rem;
+      
+    }
+    .search-container{
+      position: relative;
+      width:15rem;
+      .search-outline{
+        position: relative;
+        width: 13.5rem;
+        height: 50%;
+        border-radius: 1.5625rem;
+        border-style: solid;
+        border-width: 0.0625rem;
+        border-color: white;
+        @media only screen and (max-width: 600px){
+           width: 11rem;
+        }
+        .search-icon-container{
+          position: absolute;
+          left: 12%;
+          top: 29%;
+          @media only screen and (max-width: 600px){
+            left:13%;
+            top:30%;
+          }
+          .search-icon{
+            padding-right: 0.625rem;
+            font-size: 0.9375rem;
+          }
+        }
+      }
+    }
+  }
+
+  .home-page-body{
+    width:100%;
+    height: 100%;
+    position: relative;
+
+    .top-image-slider{
+      width: 100%;
+      height: auto;
+      position: relative;
+
+      .slider-image-element{
+       // background: blueviolet;
+        font-size: 2.25rem;
+        padding: 2%;
+        position: relative;
+        text-align: center;
+      }
+      .image-one{
+        background-image:url('../assets/images/girl-front-pose.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        .image-one-content{
+          position: absolute;
+          width:40%;
+          height: 26%;
+          top:15%;
+          left:10%;
+          border-style: solid;
+          border-width: 0 0 0 0.25rem;
+          padding: 1.5625rem;
+          font-family: 'Abril Fatface', cursive;
+          @media only screen and (max-width: 600px) {
+             width:40%;
+             height: 37%;
+             top:13%;
+          }
+          .line-one{
+            text-align: left;
+            letter-spacing: 0.25rem;
+            font-size: 1.125rem;
+            font-weight: 700;
+            font-family: 'Lato', sans-serif;
+          }
+           .line-two{
+            text-align: left;
+            letter-spacing: 0.125rem;
+            font-size: 1.57rem;
+            padding: 0.3125rem;
+            span{
+              padding: 0 0.625rem 0 0.625rem;
+              color: #d8d1c4;
+              background-color: black;
+            }
+          }
+          .line-four-container{
+            text-align: left;
+            .line-four{
+              padding: 0.9375rem 1.875rem 0.9375rem 1.875rem;
+              letter-spacing: 0.1875rem;
+              font-family: 'Lato', sans-serif;
+              font-size: 0.75rem;
+              font-weight: 700;
+              color: white;
+              background-color: #b48350;
+              box-shadow: 0 0 0.3125rem 0 rgba(0, 0, 0, 0.75);
+              border-radius: 0.1875rem;
+            }
+          }
+        }
+      }
+      .image-two{
+        background-image:url('../assets/images/girl-front-pose.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .image-three{
+        background-image:url('../assets/images/girl-front-pose.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .image-four{
+        background-image:url('../assets/images/girl-front-pose.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .image-five{
+        background-image:url('../assets/images/girl-front-pose.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+    .collection-section{
+      width: 100%;
+      height: auto;
+      position: relative;
+      .section-header{
+        width: 100%;
+        height: 20%;
+        padding: 1.875rem 0 2.5rem 0;
+        .header-line-one{
+          font-size: 2.25rem;
+          text-align: center;
+          letter-spacing: 0.125rem;
+          color: #689FAD;
+          position: relative;
+          display: table;
+          margin: 0 auto;
+          float: none;
+        }
+        .header-line-one::after{
+          position: absolute;
+          content: '';
+          height: 0.0625rem;
+          width: 21%;
+          top: 120%;
+          background-color: #689FAD;
+          text-align: center;
+          left: 61%;
+          margin-left: -20%;
+        }
+        .header-line-two{
+          padding: 1.875rem 0 0 0;
+          font-size: 1.5rem;
+          text-align: center;
+          letter-spacing: 0.125rem;
+          color: black;
+          position: relative;
+          display: table;
+          margin: 0 auto;
+          float: none;
+        }
+      }
+      .section-content{
+        width: 80%;
+        display: table;
+        margin: 0 auto;
+        float: none;
+        height: 55%;
+        position: relative;
+        background-color: #FAFAFA;
+        
+        .collection-content{
+          display: table-cell;
+          width: 33%;
+          padding: 1.875rem;
+          .section-header{
+            font-size: 2.125rem;
+            height: 50%;
+            .header-line-one::after{
+              top: 150%;
+              position: absolute;
+              content: '';
+              height: 0.0625rem;
+              width: 47%;
+              bottom: -4%;
+              background-color: black;
+              left: 46%;
+              margin-left: -20%;
+            }
+            .header-line-two{
+              color: black;
+              font-size: 1rem;
+              padding: 0.3125rem 0 0 0;
+              letter-spacing: 0.8125rem;
+            }
+          }
+          .sub-content{
+             text-align: center;
+             .shop-button-container{
+               padding: 1.5rem 0 0.125rem 0;
+                .shop-button{
+                  padding: 0.375rem 0.625rem 0.375rem 0.625rem;
+                  background-color: black;
+                  letter-spacing: 0.1875rem;
+                  font-family: 'Lato', sans-serif;
+                  font-size: 0.75rem;;
+                  color: white;
+                  border-radius: 0.1875rem;
+                }
+              }
+             .sub-content-body{
+               color: #689FAD;
+               font-size: 0.75rem;
+               padding: 0 0.125rem 0 0.125rem;
+            }
+          }
+        }
+        .content-one-show-image{
+          background-image:url('../assets/images/women-wall.jpg');
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+        .content-two-show-image{
+        background-image:url('../assets/images/man-travel.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        }
+        .content-three-show-image{
+        background-image:url('../assets/images/apparels.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        }
+      }
+    }
+    .banner-container{
+      width: 100%;
+      height: 35%;
+      position: relative;
+      margin-top: 5%;
+      background-image:url('../assets/images/two-women.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    .banner-container::after{
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top:0;
+      left: 0;
+      background-color: #212121;
+      opacity: 0.7;
+    }
+    .featured-section{ 
+      width: 100%;
+      height: 70%;
+      position: relative;
+      .section-header{
+        width: 100%;
+        height: 17%;
+        padding: 1.875rem 0 0 0;
+        .header-line-one{
+          font-size: 2.25rem;
+          text-align: center;
+          letter-spacing: 0.125rem;
+          color: #689FAD;
+          position: relative;
+          display: table;
+          margin: 0 auto;
+          float: none;
+        }
+        .header-line-one::after{
+          position: absolute;
+          content: '';
+          height: 0.0625rem;
+          width: 21%;
+          top: 120%;
+          background-color: #689FAD;
+          text-align: center;
+          left: 61%;
+          margin-left: -20%;
+        }
+      }
+      .featured-products-container{
+        display: table;
+        position: relative;
+        width: 80%;
+        height: 75%;
+        margin: 0 auto;
+        float: none;
+        .featured-product{
+          display: table-cell;
+          position: relative;
+          width: 25%;
+          height: 100%;
+          padding: 0 0.75rem 0 0.75rem;
+    
+          .add-to-cart-container{
+            height: 100%;
+            box-shadow: 0 0 1rem 0 #b3b3b3;
+            .image-one{
+              position: relative;
+              width: 100%;
+              height: 82%;
+              background-image:url('../assets/images/black-dress.png');
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+            }
+            .image-two{
+              position: relative;
+              width: 100%;
+              height: 82%;
+              background-image:url('../assets/images/women-bag.png');
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+            }
+            .image-three{
+              position: relative;
+              width: 100%;
+              height: 82%;
+              background-image:url('../assets/images/women-sun.png');
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+            }
+            .image-four{
+              position: relative;
+              width: 100%;
+              height: 82%;
+              background-image:url('../assets/images/women-white-dress.png');
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+            }
+            .featured-product-description{
+              position: relative;
+              width: 100%;
+              height: 18%;
+              text-align: left;
+              .description-line{
+                height: 50%;
+                font-size: 0.875rem;
+                padding: 0.25rem 0 0 0.625rem;
+              }
+            }
+            .add-to-cart-banner{
+              visibility: hidden;
+              display: table;
+              position: absolute;
+              width: 100%;
+              height: 18%;
+              bottom: 0;
+              z-index: 1;
+              color: white;
+              .shopping-bag-icon{
+                display: table-cell;
+                vertical-align: middle;
+                width: 20%;
+                font-size: 1.25rem;
+                text-align: center;
+              }
+              .add-to-cart-content{
+                display: table-cell;
+                width: 60%;
+                font-size: 0.6875rem;
+                vertical-align: middle;
+                font-family: 'Abril Fatface', cursive;
+                letter-spacing: 0.3125rem;
+              }
+              .add-to-favourite-icon{
+                display: table-cell;
+                vertical-align: middle;
+                width: 20%;
+                font-size: 1.25rem;
+                text-align: center;
+              }
+            }
+             .add-to-cart-banner::after{
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background-color: #212121;
+                opacity: 0.4;
+                z-index: -1;
+             }
+          }
+        }
+        .featured-product:hover .add-to-cart-container .add-to-cart-banner{
+          visibility: visible;
+        }
+      }
+    }
+    .look-book-section{
+      width: 100%;
+      height: 75%;
+      position: relative;
+      .section-header{
+        width: 100%;
+        height: 17%;
+        padding: 1.875rem 0 0 0;
+        .header-line-one{
+          font-size: 2.25rem;
+          text-align: center;
+          letter-spacing: 0.125rem;
+          color: #689FAD;
+          position: relative;
+          display: table;
+          margin: 0 auto;
+          float: none;
+        }
+        .header-line-one::after{
+          position: absolute;
+          content: '';
+          height: 0.0625rem;
+          width: 21%;
+          top: 120%;
+          background-color: #689FAD;
+          text-align: center;
+          left: 61%;
+          margin-left: -20%;
+        }
+      }
+      .look-book-images-container{
+        display: table;
+        position: relative;
+        width: 73%;
+        height: 80%;
+        margin: 0 auto;
+        float: none;
+        overflow: hidden;
+        .look-book-image{
+          // display: table-cell;
+          float: left;
+          width: 23%;
+          height: 100%;
+          padding: 0 1% 0 1%;
+          .image-one{
+            width: 100%;
+            height: 100%;
+            background-color: #398194;
+          }
+          .image-two{
+            width: 100%;
+            height: 100%;
+            background-color: #398194;
+          }
+          .image-three{
+            width: 100%;
+            height: 100%;
+            background-color: black;
+          }
+          .image-four{
+            width: 100%;
+            height: 100%;
+            background-color: black;
+          }
+          .section-container{
+            .section-one{
+              height: 25%;
+              // padding: 1.875rem 0 0 1.9375rem;
+              .section-one-image{
+                width: 50%;
+                height: 100%;
+                background-image:url('../assets/images/man-coat.png');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+              }
+            }
+            .section-two{
+               height: 18%;
+               color: white;
+               .section-two-name{
+                 font-size: 12px;
+              //   font-size: 1.395625rem;
+               }
+               .section-two-description{
+              //   font-size: 0.465rem;
+              font-size: 12px;
+               }
+            }
+            .section-three{
+               height:40%;
+               background-color: lawngreen;
+            }
+            .section-four{
+               height: 15%;
+               background-color: yellow;
+            }
+          }
+        }
+      }
+    }
+  }
+}
