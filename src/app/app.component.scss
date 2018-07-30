@@ -7,7 +7,7 @@
     display: table;
     position: relative;
     width: 100%;
-    height:4.875rem;
+    padding:0.5rem;
     background-color: black;
     color:#e4a444;
     text-align: center;
@@ -73,7 +73,6 @@
       position: relative;
 
       .slider-image-element{
-       // background: blueviolet;
         font-size: 2.25rem;
         padding: 2%;
         position: relative;
@@ -268,7 +267,7 @@
     }
     .banner-container{
       width: 100%;
-      height: 35%;
+      padding-top: 19%;
       position: relative;
       margin-top: 5%;
       background-image:url('../assets/images/two-women.png');
@@ -287,12 +286,10 @@
     }
     .featured-section{ 
       width: 100%;
-      height: 70%;
       position: relative;
       .section-header{
         width: 100%;
-        height: 17%;
-        padding: 1.875rem 0 0 0;
+        padding: 1.875rem 0;
         .header-line-one{
           font-size: 2.25rem;
           text-align: center;
@@ -306,7 +303,6 @@
         .header-line-one::after{
           position: absolute;
           content: '';
-          height: 0.0625rem;
           width: 21%;
           top: 120%;
           background-color: #689FAD;
@@ -316,26 +312,13 @@
         }
       }
       .featured-products-container{
-        display: table;
-        position: relative;
-        width: 80%;
-        height: 75%;
-        margin: 0 auto;
-        float: none;
         .featured-product{
-          display: table-cell;
-          position: relative;
-          width: 25%;
-          height: 100%;
-          padding: 0 0.75rem 0 0.75rem;
-    
           .add-to-cart-container{
-            height: 100%;
             box-shadow: 0 0 1rem 0 #b3b3b3;
             .image-one{
               position: relative;
               width: 100%;
-              height: 82%;
+              padding-top: 100%;
               background-image:url('../assets/images/black-dress.png');
               background-repeat: no-repeat;
               background-size: 100% 100%;
@@ -343,7 +326,7 @@
             .image-two{
               position: relative;
               width: 100%;
-              height: 82%;
+              padding-top: 100%;
               background-image:url('../assets/images/women-bag.png');
               background-repeat: no-repeat;
               background-size: 100% 100%;
@@ -351,7 +334,7 @@
             .image-three{
               position: relative;
               width: 100%;
-              height: 82%;
+              padding-top: 100%;
               background-image:url('../assets/images/women-sun.png');
               background-repeat: no-repeat;
               background-size: 100% 100%;
@@ -359,7 +342,7 @@
             .image-four{
               position: relative;
               width: 100%;
-              height: 82%;
+              padding-top: 100%;
               background-image:url('../assets/images/women-white-dress.png');
               background-repeat: no-repeat;
               background-size: 100% 100%;
@@ -367,10 +350,9 @@
             .featured-product-description{
               position: relative;
               width: 100%;
-              height: 18%;
+              padding: 0.5rem;;
               text-align: left;
               .description-line{
-                height: 50%;
                 font-size: 0.875rem;
                 padding: 0.25rem 0 0 0.625rem;
               }
@@ -380,7 +362,7 @@
               display: table;
               position: absolute;
               width: 100%;
-              height: 18%;
+              padding: 0.625rem 0;
               bottom: 0;
               z-index: 1;
               color: white;
@@ -496,40 +478,85 @@
         background-color: black;
       }
     }
-    .collections{
-      position: relative;
-      .collection-container{
-        .left-container{
-          margin-right: 0;
-          margin-top: 0;
-          .sport-container{
-            padding-top: 43%;
-            width: 100%;
-            background-image:url('../assets/images/two-women-shades.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-          }
-          .freshlook-container{
-            padding-top: 43%; 
-            width: 100%;
-            background-image:url('../assets/images/girl-right-pose.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-          }
-        }
-        .right-container{
-          margin: 0;
-           .autumn-container{
-            padding-top: 100%;
-            width: 100%;
-            background-image:url('../assets/images/girl-bag.png');
-            background-repeat: no-repeat;
-            background-size: contain;
-          }
+    .seasons-collections{
+      padding: 4rem 0;
+      .seasons-collections-container{
+        position: relative;
+        .half-container{
+          width: 50%;
+          float: left;
+            .sport-container{
+              padding-top: 60%;
+              width: 100%;
+              background-image:url('../assets/images/two-women-shades.png');
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: 80% 0;
+            }
+            .fresh-look-container{
+              padding-top: 60%;
+              width: 100%;
+              background-image:url('../assets/images/girl-right-pose.png');
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+            .autumn-container{
+              padding-top: 120%;
+              width: 100%;
+              background-image:url('../assets/images/girl-bag.png');
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: 67% 0;
+            }
+            .collection-content-container{
+              position: relative;
+              .collection-content{
+                position: absolute;
+                font-family: 'Lato', sans-serif;
+                top:0;
+                color: white;
+                z-index: 1;
+                .heading{
+                  font-size: 2.34rem;
+                  font-family: 'Abril Fatface', cursive;
+                  padding: 0 0 1rem 0px;
+                }
+                .sub-content{
+                  border-style: solid;
+                  border-color: white;
+                  border-width: 0.0625rem 0 0 0;
+                  font-size: 1.125rem;
+                  opacity: 0.6;
+                  width: 60%;
+                  padding: 0.75rem 0 0 0px;
+                }
+                .view-collection-container{
+                  padding: 1.5rem 0 0.125rem 0;
+                  .view-collection-button{
+                    padding: 0.625rem 1rem 0.625rem 1rem;
+                    background-color: #b48350;
+                    font-family: 'Lato', sans-serif;
+                    font-size: 1rem;;
+                    color: white;
+                    border-radius: 0.1875rem;
+                  }
+                }
+              }
+              .position-right{
+                .heading{
+                  text-align: right;
+                }
+                .sub-content{
+                  margin-left: 39%;
+                }
+                .view-collection-container{
+                  text-align: right;
+                }
+              }
+            }
         }
       }
-    }
-    .collections::after{
+      .seasons-collections-container::after{
         content: '';
         width: 100%;
         height: 100%;
@@ -539,6 +566,76 @@
         background-color: #212121;
         opacity: 0.7;
       }
+    }
+    .bottom-container{
+      padding: 2.625rem 6.25rem;
+      background-color: black;
+      color: white;
+      .email-section{
+        display: table;
+        .first-container{
+          display: table-cell;
+          vertical-align: middle;
+          width: 50%;
+          .heading{
+            font-size: 1.875rem;
+            padding: 0.75rem 0;
+          }
+          .sub-content{
+            font-size: 1.1875rem;
+            color: #FAFAFA;
+            padding: 0.75rem 0;
+            opacity: 0.7;
+          }
+        }
+        .second-container{
+          display: table-cell;
+          vertical-align: middle;
+          width: 50%;
+          .email-text-box{
+            font-size: 1.125rem;
+            font-family: 'Lato', sans-serif;
+            border: none;
+            padding: 1rem;
+            width: 50%;
+            display: block;
+            float: left;
+          }
+          .subscribe-container{
+            padding: 1rem 0.5rem;
+             float: left;
+             cursor:pointer;
+            .subscribe-button{
+              padding: 1rem 3.5rem;
+              background-color: #0E161A;
+              font-family: 'Lato', sans-serif;
+              font-size: 1rem;;
+              color: white;
+              border-radius: 0.1875rem;
+            }
+          }
+        }
+      }
+      .terms-conditions{
+        font-size: 0.9375rem;
+        padding: 3.0625rem 0;
+        text-align: center;
+        opacity: 0.8;
+      }
+      .other-services{
+        color:white;
+        .heading{
+          font-size: 1.5rem;
+          opacity: 0.8;
+          padding: 1.25rem 0;
+        }
+        .sub-contents{
+          font-size: 0.875rem;
+          opacity: 0.8;
+          padding: 0.25rem 0;
+        }
+      }
+    }
   }
 }
 
